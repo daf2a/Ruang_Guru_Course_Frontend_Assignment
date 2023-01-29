@@ -1,0 +1,327 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(11px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  font-family: poppins;
+  color: rgb(14, 39, 88);
+  font-size: 1em;
+}
+
+header nav a {
+  color: rgb(14, 39, 88);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5em;
+  border-bottom: 1px solid transparent;
+  transition: all 0.6s ease;
+}
+
+header nav a:hover {
+  border-bottom: 1px solid rgb(14, 39, 88);
+}
+
+hr {
+  display: none;
+}
+
+/* main section */
+
+#about #perkenalan {
+  background-color: rgb(51, 76, 129);
+  padding: 5em 25em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+#about h2 {
+  display: none;
+}
+
+#about #perkenalan h3 {
+  text-align: center;
+  color: white;
+  font-family: poppins;
+  font-size: 2em;
+}
+#about #perkenalan p {
+  color: white;
+  text-align: left;
+  font-family: poppins;
+  font-size: 1em;
+}
+
+#about #perkenalan img {
+  border: 7px solid white;
+  text-align: center;
+  width: 200px;
+  margin: 1em;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 5em;
+  gap: 1.5em;
+}
+
+.about-me #skill,
+.about-me #pendidikan,
+.about-me #pengalaman {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2em;
+  transition: all 0.5s ease;
+}
+
+.about-me #skill:hover,
+.about-me #pendidikan:hover,
+.about-me #pengalaman:hover {
+  transform: scale(1.05);
+}
+
+.about-me h3 {
+  color: rgb(14, 39, 88);
+  font-family: poppins;
+  font-size: 2em;
+}
+
+li {
+  line-height: 2em;
+  color: rgb(14, 39, 88);
+  font-family: poppins;
+}
+
+p {
+  line-height: 1.5em;
+  color: rgb(14, 39, 88);
+  font-family: poppins;
+}
+
+#porto {
+  background-color: rgb(51, 76, 129);
+  padding: 4em 5em;
+}
+
+#porto h2 {
+  font-family: poppins;
+  color: white;
+  font-size: 2.3em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+#porto article {
+  background-color: white;
+  padding: 1.5em;
+  transition: all 0.6s ease;
+}
+
+#porto article:hover {
+  transform: scale(1.07);
+}
+
+#porto article h3 {
+  color: rgb(14, 39, 88);
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  font-family: poppins;
+}
+
+#porto .my-porto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1.4em;
+}
+
+#contact {
+  padding: 5em 10em;
+}
+
+#contact h2 {
+  color: rgb(14, 39, 88);
+  text-align: center;
+  font-size: 2em;
+  font-family: poppins;
+}
+
+#contact form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+form label {
+  color: rgb(14, 39, 88);
+  font-family: poppins;
+  margin: 0.5em 0;
+}
+
+form input,
+textarea,
+button {
+  padding: 0.8em;
+  font-family: poppins;
+  font-size: 1em;
+}
+
+button {
+  color: white;
+  background-color: rgb(14, 39, 88);
+  border: 1px solid transparent;
+  margin: 1em 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgb(51, 76, 129);
+  padding: 5em 10em;
+}
+
+footer h2 {
+  font-family: poppins;
+  color: white;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+footer ul li a {
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s ease;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: poppins;
+}
+
+footer a:hover {
+  border-bottom: 1px solid white;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+.navigasi {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 320px) {
+  :root {
+    font-size: 14px;
+  }
+  #porto {
+    padding: 5em;
+  }
+  footer {
+    padding: 5em;
+  }
+  #porto .my-porto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.2em;
+  }
+
+  #about #perkenalan {
+    background-color: rgb(51, 76, 129);
+    padding: 5em 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 5em;
+    gap: 2em;
+  }
+  #contact {
+    padding: 5em 5em;
+  }
+  #about #perkenalan {
+    padding: 5em 5em;
+  }
+  .navigasi {
+    display: flex;
+    gap: 2em;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  header {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    font-size: 14px;
+  }
+  #porto .my-porto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.2em;
+  }
+  #about #perkenalan {
+    background-color: rgb(51, 76, 129);
+    padding: 5em 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 5em;
+    gap: 2em;
+  }
+  #porto {
+    background-color: rgb(51, 76, 129);
+    padding: 5em;
+  }
+  footer {
+    background-color: rgb(51, 76, 129);
+    padding: 5em;
+  }
+}
+
+@media (max-width: 1080px) {
+  :root {
+    font-size: 16px;
+  }
+}
