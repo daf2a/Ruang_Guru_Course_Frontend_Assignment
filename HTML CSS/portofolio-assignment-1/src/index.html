@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: {
+                default: "#353543",
+                dark: "#272833",
+                light: "#403F4F",
+                verydark: "#20212F",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background-default" id="dashboard">
+    <!-- Header -->
+    <header
+      class="sticky top-0 flex flex-row items-center justify-center py-4 px-4 z-50 bg-background-default/90 border-b-2 border-background-default backdrop-blur-md"
+    >
+      <div class="flex flex-row justify-start items-end mr-44">
+        <img src="home.svg" alt="home" class="w-7.4 h-7.4" />
+        <a
+          class="text-white text-lg pl-1 font-bold hover:text-cyan-300"
+          href="#dashboard"
+        >
+          Home
+        </a>
+      </div>
+      <nav
+        class="justify-around pl-3 pt-1 font-semibold text-white mr-80 items-center"
+      >
+        <a
+          class="mr-8 transition-opacity hover:border-b-2 hover:border-solid hover:border-b-blue-400 hover:text-white"
+          href="#dashboard"
+          >About</a
+        >
+        <a
+          class="mr-8 transition-opacity hover:border-b-2 hover:border-solid hover:border-b-blue-400 hover:text-white"
+          href="#porto"
+          >Portofolio</a
+        >
+        <a
+          class="mr-8 transition-opacity hover:border-b-2 hover:border-solid hover:border-b-blue-400 hover:text-white"
+          href="#contact"
+          >Contact</a
+        >
+      </nav>
+      <nav class="flex col pl-3 pt-1 font-semibold text-white">
+        <a href="#contact"
+          ><img
+            src="chat-alt-2.svg"
+            alt="home"
+            class="w-7 h-7 mr-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300"
+        /></a>
+        <a href="#contact"
+          ><img
+            src="academic-cap.svg"
+            alt="home"
+            class="w-7 h-7 mr-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300"
+        /></a>
+        <a href="#contact"
+          ><img
+            src="menu-alt-2.svg"
+            alt="home"
+            class="w-7 h-7 mr-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300"
+        /></a>
+      </nav>
+    </header>
+    <!-- About -->
+    <div class="flex flex-row">
+      <div class="ml-60 mt-28 z-10">
+        <h1 class="text-6xl font-bold text-white">Halo 👋</h1>
+        <h1 class="text-7xl font-bold text-white pt-2">
+          Saya
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-500"
+            >Daffa' A</span
+          >
+        </h1>
+        <img src="Rectangle 2.svg" class="py-7" />
+        <p class="text-white w-80 text-sm">
+          Hola! nama saya Muhammad Daffa Ashdaqfillah, yang biasa dipanggil
+          dengan nama Daffa. <br />
+          <br />
+          Saya mempunyai berbagai macam pengalaman lebih dari 3 tahun dalam
+          dunia Graphic Design dan Jurnalistik/Content Writer.
+        </p>
+      </div>
+      <div class="justify-center absolute items-center mt-6 right-96">
+        <img src="Ellipse 1.svg" class="-z-10 absolute scale-110 bottom-12" />
+        <img
+          src="Vector 917 (Stroke).svg"
+          class="-z-10 absolute bottom-16 -right-28"
+        />
+        <img
+          src="Creative Design_Manager_Muhammad Daffa Ashdaqfillah-Foto Formal.svg"
+          class="z-0 scale-90"
+        />
+      </div>
+      <div class="z-10 pt-28 pl-80">
+        <p class="text-white w-56 text-sm">
+          Saya senang mempelajari hal-hal baru dan mampu beradaptasi dengan
+          lingkungan yang mengasah kemampuan saya mnjadi lebih baik.<br />
+          <br />
+          <b>Salam kenal !</b>
+        </p>
+        <div class="flex flex-row pt-3">
+          <img
+            src="at-symbol.svg"
+            alt="at"
+            class="bg-background-light rounded-full py-1 px-1 w-8 mr-3.5 transition ease-in-out delay-150 hover:bg-blue-500 hover:scale-110 duration-300"
+          />
+          <img
+            src="currency-yen.svg"
+            alt="at"
+            class="bg-background-light rounded-full py-1 px-1 w-8 mr-3.5 transition ease-in-out delay-150 hover:bg-blue-500 hover:scale-110 duration-300"
+          />
+          <img
+            src="heart.svg"
+            alt="at"
+            class="bg-background-light rounded-full py-1 px-1 w-8 mr-3.5 transition ease-in-out delay-150 hover:bg-blue-500 hover:scale-110 duration-300"
+          />
+          <img
+            src="shield-check.svg"
+            alt="at"
+            class="bg-background-light rounded-full py-1 px-1 w-8 mr-3.5 transition ease-in-out delay-150 hover:bg-blue-500 hover:scale-110 duration-300"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative flex flex-row bg-background-light rounded-2xl py-10 mx-60 mt-28 z-40 justify-around text-center"
+    >
+      <div
+        class="bg-background-dark rounded-xl py-4 px-5 w-44 font-semibold text-white transition ease-in-out delay-100 hover:bg-cyan-400 hover:text-background-dark hover:scale-105 duration-300"
+      >
+        Adobe Family
+      </div>
+      <div
+        class="bg-background-dark rounded-xl py-4 px-5 w-44 font-semibold text-white transition ease-in-out delay-100 hover:bg-cyan-400 hover:text-background-dark hover:scale-105 duration-300"
+      >
+        C/C++
+      </div>
+      <div
+        class="bg-background-dark rounded-xl py-4 px-5 w-44 font-semibold text-white transition ease-in-out delay-100 hover:bg-cyan-400 hover:text-background-dark hover:scale-105 duration-300"
+      >
+        Figma
+      </div>
+      <div
+        class="bg-background-dark rounded-xl py-4 px-5 w-44 font-semibold text-white transition ease-in-out delay-100 hover:bg-cyan-400 hover:text-background-dark hover:scale-105 duration-300"
+      >
+        Inventor 3D
+      </div>
+    </div>
+    <!-- short porto -->
+    <div
+      class="relative flex flex-row bg-background-dark pb-28 -top-16"
+      id="porto"
+    >
+      <div class="w-80 pt-52 pb-28 ml-64">
+        <h1 class="text-4xl text-white font-bold">
+          What Can I Do For Your Needs
+        </h1>
+        <p class="text-white py-5">
+          Sebagai seorang yang berpengalaman di bidang kreatif, saya sangat
+          senang jika dapat membantu mengembangkan bisnis relasi yang
+          bekerjasama dengan saya.
+        </p>
+        <div class="grid grid-cols-2">
+          <div>
+            <h1
+              class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-500"
+            >
+              250+
+            </h1>
+            <p class="text-white font-semibold mb-2">Design Web</p>
+          </div>
+          <div>
+            <h1
+              class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-500"
+            >
+              250+
+            </h1>
+            <p class="text-white font-semibold mb-2">AI Illustration</p>
+          </div>
+          <div>
+            <h1
+              class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-500"
+            >
+              250+
+            </h1>
+            <p class="text-white font-semibold mb-2">Mockup Design</p>
+          </div>
+          <div>
+            <h1
+              class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-500"
+            >
+              250+
+            </h1>
+            <p class="text-white font-semibold mb-2">Client Project</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col mt-48 ml-56">
+        <div class="flex flex-col items-center pr-48">
+          <div
+            class="flex flex-row items-center transition-all group ease-in-out border-b-4 border-spacing-4 border-spacing-x-20 border-background-default hover:border-cyan-500 delay-75 duration-300"
+          >
+            <img src="Rectangle 16.svg" alt="mockup" class="scale-75" />
+            <h2
+              class="text-white text-2xl font-semibold group-hover:text-cyan-400 delay-75"
+            >
+              Poster Design
+              <p class="text-white text-lg group-hover:text-cyan-400 delay-75">
+                10 Project
+              </p>
+            </h2>
+            <img src="Arrow 1.svg" alt="mockup" class="scale-75 pl-36" />
+          </div>
+        </div>
+        <div class="flex flex-col items-center pr-48">
+          <div
+            class="flex flex-row items-center transition-all group ease-in-out border-b-4 border-spacing-4 border-spacing-x-20 border-background-default hover:border-cyan-500 delay-75 duration-300"
+          >
+            <img src="Rectangle 16.svg" alt="mockup" class="scale-75" />
+            <h2
+              class="text-white text-2xl font-semibold group-hover:text-cyan-400 delay-75"
+            >
+              Poster Design
+              <p class="text-white text-lg group-hover:text-cyan-400 delay-75">
+                10 Project
+              </p>
+            </h2>
+            <img src="Arrow 1.svg" alt="mockup" class="scale-75 pl-36" />
+          </div>
+        </div>
+        <div class="flex flex-col items-center pr-48">
+          <div
+            class="flex flex-row items-center transition-all group ease-in-out border-b-4 border-spacing-4 border-spacing-x-20 border-background-default hover:border-cyan-500 delay-75 duration-300"
+          >
+            <img src="Rectangle 16.svg" alt="mockup" class="scale-75" />
+            <h2
+              class="text-white text-2xl font-semibold group-hover:text-cyan-400 delay-75"
+            >
+              Poster Design
+              <p class="text-white text-lg group-hover:text-cyan-400 delay-75">
+                10 Project
+              </p>
+            </h2>
+            <img src="Arrow 1.svg" alt="mockup" class="scale-75 pl-36" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portofolio -->
+    <div class="pb-20">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold text-white pb-16">
+          My Selected Portofolio
+        </h1>
+      </div>
+      <div class="columns-3 gap-8 justify-center px-20">
+        <img
+          class="rounded-xl border-4 border-gray-500 hover:border-blue-500 mb-8 hover:scale-105 transition-all delay-75 duration-100"
+          src="porto1.jpg"
+          alt="Portfolio 1"
+        />
+        <img
+          class="rounded-xl border-4 border-gray-500 hover:border-blue-500 mb-8 hover:scale-105 transition-all delay-75 duration-100"
+          src="porto4.jpg"
+          alt="Portfolio 4"
+        />
+        <img
+          class="rounded-xl border-4 border-gray-500 hover:border-blue-500 mb-10 hover:scale-105 transition-all delay-75 duration-100"
+          src="porto2.jpg"
+          alt="Portfolio 2"
+        />
+        <img
+          class="rounded-xl border-4 border-gray-500 hover:border-blue-500 mb-8 hover:scale-105 transition-all delay-75 duration-100"
+          src="porto5.png"
+          alt="Portfolio 5"
+        />
+        <img
+          class="rounded-xl border-4 border-gray-500 hover:border-blue-500 mb-8 hover:scale-105 transition-all delay-75 duration-100"
+          src="porto3.jpg"
+          alt="Portfolio 3"
+        />
+        <img
+          class="rounded-xl border-4 border-gray-500 hover:border-blue-500 mr-4 mb-4 hover:scale-105 transition-all delay-75 duration-100"
+          src="porto6.jpg"
+          alt="Portfolio 6"
+        />
+      </div>
+    </div>
+    <!-- Contact -->
+    <div
+      class="bg-background-dark pt-10 pb-16 px-20 flex text-white flex-row"
+      id="contact"
+    >
+      <div class="basis-1/2">
+        <h2 class="pt-4 text-2xl font-bold text-white mb-2">Contact Me</h2>
+        <form class="flex flex-col" action="">
+          <input
+            class="mb-3 rounded-xl border-2 h-10 text-sm border-blue-500 bg-background-verydark p-2 placeholder-background-light focus:outline-none focus:ring-1 focus:border-green-400 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="  your name..."
+          />
+          <input
+            class="mb-3 rounded-xl border-2 h-10 text-sm border-blue-500 bg-background-verydark p-2 placeholder-background-light focus:outline-none focus:ring-1 focus:border-green-400 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="  your email..."
+          />
+          <textarea
+            class="mb-3 rounded-xl border-2 h-24 text-sm border-blue-500 bg-background-verydark p-2 placeholder-background-light focus:outline-none focus:ring-1 focus:border-green-400 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="  your massage..."
+          ></textarea>
+          <button
+            class="rounded-2xl bg-blue-500 p-2 font-bold text-background-verydark hover:bg-blue-700 w-24"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+      <div>
+        <div class="text-white ml-40">
+          <ul>
+            <h2 class="pt-4 text-2xl font-bold text-white mb-2">Navigasi</h2>
+            <li>
+              <a
+                class="transition-opacity hover:border-b-2 hover:border-solid hover:border-b-blue-400 hover:text-white"
+                href="#dashboard"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-opacity hover:border-b-2 hover:border-solid hover:border-b-blue-400 hover:text-white"
+                href="#porto"
+                >Portofolio</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-opacity hover:border-b-2 hover:border-solid hover:border-b-blue-400 hover:text-white"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <h2 class="pt-6 text-2xl font-bold text-white mb-2">
+              Social Media
+            </h2>
+            <li>
+              <a
+                class="transition-opacity hover:border-b-2 hover:border-solid hover:border-b-blue-400 hover:text-white"
+                href="https://www.linkedin.com/in/muhammad-daffa-ashdaqfillah-7768b1228/"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-opacity hover:border-b-2 hover:border-solid hover:border-b-blue-400 hover:text-white"
+                href="https://github.com/daf2a"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-opacity hover:border-b-2 hover:border-solid hover:border-b-blue-400 hover:text-white"
+                href="https://instagram.com/daf2a_"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+          <p class="pt-5 text-sm text-blue-500">&copy; 25 Januari 2023</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
