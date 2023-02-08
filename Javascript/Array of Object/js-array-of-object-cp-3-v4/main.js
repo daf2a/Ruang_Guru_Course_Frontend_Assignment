@@ -1,5 +1,25 @@
 function mostRecommended(games) {
-  return {}; // TODO: replace this
+  games.sort((a, b) => b.rating - a.rating);
+  let result = {};
+  if (games.length <= 1) return "Data cannot be compared";
+  for (let i = 0; i < games.length; i++) {
+    let genre = games[i].genre;
+    if (result[genre] === undefined) {
+      result[genre] = {};
+      result[genre]["title"] = "";
+      result[genre]["genre"] = "";
+      result[genre]["developer"] = "";
+      result[genre]["rating"] = 0;
+    }
+    if (result[genre]["title"][0] !== undefined) continue;
+    else {
+      result[genre]["title"] = games[i].title;
+      result[genre]["genre"] = games[i].genre;
+      result[genre]["developer"] = games[i].developer;
+      result[genre]["rating"] = games[i].rating;
+    }
+  }
+  return result;
 }
 
 const allGames = [
