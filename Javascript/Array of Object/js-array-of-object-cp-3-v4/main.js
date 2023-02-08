@@ -6,12 +6,8 @@ function mostRecommended(games) {
     let genre = games[i].genre;
     if (result[genre] === undefined) {
       result[genre] = {};
-      result[genre]["title"] = "";
-      result[genre]["genre"] = "";
-      result[genre]["developer"] = "";
-      result[genre]["rating"] = 0;
     }
-    if (result[genre]["title"][0] !== undefined) continue;
+    if (result[genre]["title"] !== undefined) continue;
     else {
       result[genre]["title"] = games[i].title;
       result[genre]["genre"] = games[i].genre;
