@@ -1,7 +1,7 @@
 import { task1, task2, task3, task4 } from "./tasks.js";
 import nodeFetch from "node-fetch";
 
-global.fetch = nodeFetch;
+global.fetch = nodeFetch; // polyfill for fetch API
 
 const task_1_result = async () => {
   try {

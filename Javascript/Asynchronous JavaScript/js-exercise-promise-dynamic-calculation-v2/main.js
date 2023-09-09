@@ -30,4 +30,5 @@ function calculatePromise(number1, number2) {
   });
 }
 
+// Call the calculate function
 module.exports = calculatePromise;

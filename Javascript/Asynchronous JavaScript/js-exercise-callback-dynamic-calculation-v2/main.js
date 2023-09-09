@@ -25,4 +25,5 @@ function calculate(number1, number2, callback) {
   }
 }
 
+// Call the calculate function
 module.exports = calculate;

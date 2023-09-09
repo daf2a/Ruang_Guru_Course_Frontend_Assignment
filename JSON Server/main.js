@@ -5,6 +5,7 @@ const data = {
     id: 5
 };
 
+// fetch API
 fetch("http://localhost:3000/movies", {
   method: "PATCH",
   headers: {

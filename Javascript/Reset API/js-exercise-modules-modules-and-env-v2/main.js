@@ -89,4 +89,3 @@ const articles = [
 ]
 
 console.log(mergeData(users, articles));
-// TODO: answer here

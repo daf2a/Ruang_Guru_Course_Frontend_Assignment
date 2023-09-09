@@ -59,13 +59,15 @@ async function process_argv() {
   return result;
 }
 
+// Call the process_argv function
 process_argv()
   .then((data) => {
     console.log(data);
   })
   .catch((err) => {
     console.error(err.message);
-  });
+});
+
 
 module.exports = {
   studentActivitiesRegistration,

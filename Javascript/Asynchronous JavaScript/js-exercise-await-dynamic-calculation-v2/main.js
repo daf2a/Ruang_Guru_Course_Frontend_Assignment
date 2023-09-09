@@ -25,4 +25,6 @@ async function calculate(number1, number2) {
   });
 }
 
+// Call the calculate function
 module.exports = calculate;
+
